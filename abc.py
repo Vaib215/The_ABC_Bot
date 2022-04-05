@@ -1,65 +1,73 @@
-import re
-from flask import Flask, request
-import telegram
-from credentials import bot_token, bot_user_name,URL
+from telegram import *
+from telegram.ext import *
+import credentials
+import cuims_scrapper
+bot = Bot(credentials.bot_token)
 
+updater = Updater(credentials.bot_token,use_context=True)
+dispatcher = updater.dispatcher
+def showDefMessage(update):
+  update.message.reply_text("First login by /login then send\n1 for attendance\n2 for Marks\n3 for Timetable")
 
-global bot
-global TOKEN
-TOKEN = bot_token
-bot = telegram.Bot(token=TOKEN)
+def start(update:Update, context):
+  username = update['message']['chat']['first_name']   
+  chat_id = update.message.chat_id
+  update.message.reply_text("Hello, if you are here for first time then /addCredentials first.")
+  showDefMessage(update)
+ONE , TWO = range(2)
+def add_credentials(update: Update, context: CallbackContext):
+     chat_id = update.message.chat_id
+     bot.send_message(chat_id , text = "hello , you are registering ! please enter your UID | type 'cancel' anytime to cancel process")
+     return ONE
 
-app = Flask(__name__)
-
-@app.route('/{}'.format(TOKEN), methods=['POST'])
-def respond():
-   # retrieve the message in JSON and then transform it to Telegram object
-   update = telegram.Update.de_json(request.get_json(force=True), bot)
-
-   chat_id = update.message.chat.id
-   msg_id = update.message.message_id
-
-   # Telegram understands UTF-8, so encode text for unicode compatibility
-   text = update.message.text.encode('utf-8').decode()
-   # for debugging purposes only
-   print("got text message :", text)
-   # the first time you chat with the bot AKA the welcoming message
-   if text == "/start":
-       # print the welcoming message
-       bot_welcome = """
-       Welcome to coolAvatar bot, the bot is using the service from http://avatars.adorable.io/ to generate cool looking avatars based on the name you enter so please enter a name and the bot will reply with an avatar for your name.
-       """
-       # send the welcoming message
-       bot.sendMessage(chat_id=chat_id, text=bot_welcome, reply_to_message_id=msg_id)
-
-
-   else:
-       try:
-           # clear the message we got from any non alphabets
-           text = re.sub(r"\W", "_", text)
-           # create the api link for the avatar based on http://avatars.adorable.io/
-           url = "https://api.adorable.io/avatars/285/{}.png".format(text.strip())
-           # reply with a photo to the name the user sent,
-           # note that you can send photos by url and telegram will fetch it for you
-           bot.sendPhoto(chat_id=chat_id, photo=url, reply_to_message_id=msg_id)
-       except Exception:
-           # if things went wrong
-           bot.sendMessage(chat_id=chat_id, text="There was a problem in the name you used, please enter different name", reply_to_message_id=msg_id)
-
-   return 'ok'
-
-@app.route('/set_webhook', methods=['GET', 'POST'])
-def set_webhook():
-   s = bot.setWebhook('{URL}{HOOK}'.format(URL=URL, HOOK=TOKEN))
-   if s:
-       return "webhook setup ok"
-   else:
-       return "webhook setup failed"
-
-@app.route('/')
-def index():
-   return '.'
-
-
-if __name__ == '__main__':
-   app.run(threaded=True)
+def got_uid(update: Update, context: CallbackContext):
+     chat_id = update.message.chat_id
+     uid = update.message.text # now we got the UID
+     context.user_data["uid"] = uid # to use it later (in next func)
+     bot.send_message(chat_id , text = f"Enter password for UID {uid}:")
+     return TWO
+def saveData(uid,password,id):
+  cred = open("{}.txt".format(id),"w")
+  cred.write("{}\n{}".format(uid,password))
+  cred.close()
+def got_password(update: Update, context: CallbackContext):
+     chat_id = update.message.chat_id
+     password = update.message.text # now we got the password
+     uid = context.user_data["uid"] # we had the name , remember ?!
+     context.user_data["password"] = password
+     saveData(uid,password,chat_id)
+     bot.send_message(chat_id , text = f"completed ! your name is {uid} and your phone number is {password}")
+     return ConversationHandler.END
+def cancel(update: Update, context: CallbackContext):
+     chat_id = update.message.chat_id
+     bot.send_message(chat_id , text = "process canceled !")
+     return ConversationHandler.END
+CH = ConversationHandler (entry_points = [CommandHandler("addCredentials", add_credentials)],
+     states = {ONE : [MessageHandler(Filters.text , got_uid)],
+     TWO : [MessageHandler(Filters.text , got_password)]
+     },
+     fallbacks = [MessageHandler(Filters.regex('cancel'), cancel)],
+     allow_reentry=  True)
+def main_handler(update, context:CallbackContext):
+  update:Update
+  choice = update.message.text
+  chat_id = update.message.chat_id
+  file=cuims_scrapper.utility(chat_id,choice)
+  bot.send_document(chat_id,open(file,'rb'))
+def login(update:Update,context:CallbackContext):
+  chat_id = update.message.chat_id
+  try:
+    bot.send_message(chat_id,"Logging in, wait for few seconds.")
+    cred = open("{}.txt".format(chat_id))
+    text = cred.read()
+    uid,password = text.split()
+    cred.close()
+    cuims_scrapper.login(uid,password)
+    bot.send_message(chat_id,"Successfully logged in")
+  except:
+    bot.send_message(chat_id,"No Credentials Found. Add Credentials by /addCredentials .")
+dispatcher.add_handler(CH)
+dispatcher.add_handler(CommandHandler('login',login))
+dispatcher.add_handler(CommandHandler('start', start))
+dispatcher.add_handler(MessageHandler(Filters.text, main_handler)) 
+updater.start_polling()
