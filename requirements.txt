@@ -2,3 +2,4 @@ Pillow==9.1.0
 python_telegram_bot==13.11
 selenium==3.141.0
 telegram==0.0.1
+gunicorn==19.0.0 
