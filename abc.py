@@ -1,3 +1,4 @@
+from telegram import *
 from telegram.ext import *
 import credentials
 import cuims_scrapper
