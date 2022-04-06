@@ -14,7 +14,6 @@ def login(uid,password):
     driver.find_element_by_id('btnLogin').click()
 def utility(uid,password,id,choice):
     if choice=="1":
-        print("Finding Attendance")
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[1]/a').click()
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/ul[1]/li[2]/a').click()
         time.sleep(3)
@@ -45,3 +44,23 @@ def utility(uid,password,id,choice):
         return "{}_timeTable.png".format(id)
     elif choice=="4":
         return bb.calender(uid,password,id)
+    elif choice=="5":
+        driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[11]/a').click()
+        driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/ul[6]/li[1]/a').click()
+        time.sleep(3)
+        driver.find_element_by_xpath('//*[@id="ContentPlaceHolder1_wucStudentDateSheet_gvStudentDateSheet"]').screenshot("{}_datesheet.png".format(id))
+        driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[11]/a').click()
+        return "{}_datesheet.png".format(id)
+    elif choice=="6":
+        driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[11]/a').click()
+        driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/ul[6]/li[2]/a').click()
+        driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/ul[6]/ul[1]/li/a').click()
+        driver.find_element_by_xpath('//*[@id="ContentPlaceHolder1_wucResult1_dvResult"]').screenshot("{}_result.png".format(id))
+        time.sleep(3)
+        driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[11]/a').click()
+        return "{}_result.png".format(id)
+    elif choice=="7":
+        driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[13]/a').click()
+        time.sleep(5)
+        driver.find_element_by_xpath('//*[@id="ctl00_ContentPlaceHolder1_ReportViewer1_fixedTable"]').screenshot("{}_profile.png".format(id))
+        return "{}_profile.png".format(id)

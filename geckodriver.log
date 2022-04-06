@@ -290,3 +290,71 @@ console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message f
 JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
 JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1649240609217	geckodriver	INFO	Listening on 127.0.0.1:53735
+1649240610233	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-no-remote" "-profile" "/tmp/rust_mozprofilezcLv0m"
+*** You are running in headless mode.
+1649240614320	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezcLv0m/search.json.mozlz4", (void 0)))
+1649240620560	Marionette	INFO	Listening on port 42629
+Read port: 42629
+1649240621022	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1649240621083	geckodriver	INFO	Listening on 127.0.0.1:60369
+1649240622097	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileVW0W78"
+1649240628015	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVW0W78/search.json.mozlz4", (void 0)))
+1649240634252	Marionette	INFO	Listening on port 39765
+Read port: 39765
+1649240634427	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://uims.cuchd.in/uims/Scripts/jquery-2.0.3.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://uims.cuchd.in/uims/doodle/js/birthday.js, line 139: TypeError: canvas is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript warning: https://uims.cuchd.in/uims/Scripts/jquery-2.0.3.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://uims.cuchd.in/uims/doodle/js/birthday.js, line 139: TypeError: canvas is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://uims.cuchd.in/uims/Scripts/jquery-2.0.3.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://uims.cuchd.in/uims/ScriptResource.axd?d=mbGZm65DzNC0tMTq0ElbceDcvpdSedOOEcX9To-bGu7AAtw8JA5QtU_snOfhz9UaFfw3r3E95Ov4zNyDdyEx8GFGDCYHYXmHwKcBgmItX2-i21_bRshOSig8P_TMcVJcGGMrxLDCuAgS7CGnVONiiQ2&t=ffffffffdb8968b2, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://uims.cuchd.in/uims/Scripts/jquery-2.0.3.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+
+(firefox:30481): GLib-GObject-CRITICAL **: 16:11:11.488: g_object_ref: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:30658): dconf-WARNING **: 16:11:12.354: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://uims.cuchd.in/uims/ScriptResource.axd?d=mbGZm65DzNC0tMTq0ElbceDcvpdSedOOEcX9To-bGu7AAtw8JA5QtU_snOfhz9UaFfw3r3E95Ov4zNyDdyEx8GFGDCYHYXmHwKcBgmItX2-i21_bRshOSig8P_TMcVJcGGMrxLDCuAgS7CGnVONiiQ2&t=ffffffffdb8968b2, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1649242220728	Marionette	INFO	Stopped listening on port 39765
