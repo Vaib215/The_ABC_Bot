@@ -1,13 +1,14 @@
 from telegram import *
 from telegram.ext import *
 import credentials
+import os
 import cuims_scrapper
 bot = Bot(credentials.bot_token)
 
 updater = Updater(credentials.bot_token,use_context=True)
 dispatcher = updater.dispatcher
 def showDefMessage(update):
-  update.message.reply_text("First login by /login then send\n1 for attendance\n2 for Marks\n3 for Timetable")
+  update.message.reply_text("First login by /login then send\n1 for attendance\n2 for Marks\n3 for Timetable\n4 for Calender Dues on BB")
 
 def start(update:Update, context):
   username = update['message']['chat']['first_name']   
@@ -52,8 +53,13 @@ def main_handler(update, context:CallbackContext):
   update:Update
   choice = update.message.text
   chat_id = update.message.chat_id
-  file=cuims_scrapper.utility(chat_id,choice)
+  cred = open("{}.txt".format(chat_id))
+  text = cred.read()
+  uid,password = text.split()
+  cred.close()
+  file=cuims_scrapper.utility(uid,password,chat_id,choice)
   bot.send_document(chat_id,open(file,'rb'))
+  os.remove(file)
 def login(update:Update,context:CallbackContext):
   chat_id = update.message.chat_id
   try:

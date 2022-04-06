@@ -20,3 +20,273 @@ Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1649218928080	geckodriver	INFO	Listening on 127.0.0.1:41803
+1649218928101	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilef3Onnl"
+1649218932323	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilef3Onnl/search.json.mozlz4", (void 0)))
+1649218938731	Marionette	INFO	Listening on port 39767
+Read port: 39767
+1649218939186	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1649218963213	Marionette	INFO	Stopped listening on port 39767
+1649219184561	geckodriver	INFO	Listening on 127.0.0.1:59331
+1649219184582	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileNUUUCA"
+1649219188856	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNUUUCA/search.json.mozlz4", (void 0)))
+1649219194942	Marionette	INFO	Listening on port 32949
+Read port: 32949
+1649219195311	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1649219240290	Marionette	INFO	Stopped listening on port 32949
+1649219243269	geckodriver	INFO	Listening on 127.0.0.1:59595
+1649219243288	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileEoL5B3"
+1649219247849	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEoL5B3/search.json.mozlz4", (void 0)))
+1649219253902	Marionette	INFO	Listening on port 44953
+Read port: 44953
+1649219254426	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1649219379236	Marionette	INFO	Stopped listening on port 44953
+1649219383007	geckodriver	INFO	Listening on 127.0.0.1:58095
+1649219384015	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilehbBJ4F"
+1649219388367	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehbBJ4F/search.json.mozlz4", (void 0)))
+1649219394557	Marionette	INFO	Listening on port 39997
+Read port: 39997
+1649219394876	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1649219558637	geckodriver	INFO	Listening on 127.0.0.1:41843
+1649219558662	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileApDe9N"
+1649219562712	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileApDe9N/search.json.mozlz4", (void 0)))
+1649219569931	Marionette	INFO	Listening on port 43365
+Read port: 43365
+1649219570018	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: resource://devtools/client/framework/toolbox.js, line 2096: TypeError: currentPanel is undefined
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://devtools/server/actors/resources/stylesheets.js, line 71: TypeError: styleSheet is null
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://devtools/server/actors/resources/stylesheets.js, line 71: TypeError: styleSheet is null
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.google.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_CommitBrowsingContextTransaction) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_CommitBrowsingContextTransaction) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/xnyDcLTJFFqRrOSh_tGs93TmBGWOIlQl9rUvBjKFBOc.js line 1 > eval line 4890 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/xnyDcLTJFFqRrOSh_tGs93TmBGWOIlQl9rUvBjKFBOc.js line 1 > eval line 604 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/xnyDcLTJFFqRrOSh_tGs93TmBGWOIlQl9rUvBjKFBOc.js line 1 > eval line 337 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1649219970360	Marionette	INFO	Stopped listening on port 39997
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1649219975065	Marionette	INFO	Stopped listening on port 43365
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1649220215415	geckodriver	INFO	Listening on 127.0.0.1:49837
+1649220215458	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileSTyONG"
+1649220220974	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSTyONG/search.json.mozlz4", (void 0)))
+1649220227533	Marionette	INFO	Listening on port 38185
+Read port: 38185
+1649220227947	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "node is null"
+console.error: (new TypeError("node is null", "resource://devtools/server/actors/page-style.js", 1001))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: (new TypeError("nodeFront.walkerFront is null", "resource://devtools/client/inspector/markup/markup.js", 956))
+TypeError: nodeFront.walkerFront is null: _onNewSelection@resource://devtools/client/inspector/markup/markup.js:956:7
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+setNodeFront@resource://devtools/client/framework/selection.js:206:10
+onDetached@resource://devtools/client/inspector/inspector.js:1676:20
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+_onMutations@resource://devtools/client/framework/selection.js:104:12
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: (new Error("Can not send request 'getUniqueSelector' because front 'domnode' is already destroyed.", "resource://devtools/shared/protocol/Front/FrontClassWithSpec.js", 28))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2320))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2320))
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.windowGlobal6442450946/pagestyle25 (resource://devtools/server/actors/page-style.js:1001:5)", "resource://devtools/shared/protocol/Front.js", 365))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+getMutations@resource://devtools/client/fronts/walker.js:312:10
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1649220752335	Marionette	INFO	Stopped listening on port 38185
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PRemoteWorkerService::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1649220757987	geckodriver	INFO	Listening on 127.0.0.1:39963
+1649220758026	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilezesalN"
+1649220762120	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezesalN/search.json.mozlz4", (void 0)))
+1649220767471	Marionette	INFO	Listening on port 44405
+Read port: 44405
+1649220767632	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1649220792988	Marionette	INFO	Stopped listening on port 44405
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1649220829013	geckodriver	INFO	Listening on 127.0.0.1:50479
+1649220829027	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilec4TU7b"
+1649220832258	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilec4TU7b/search.json.mozlz4", (void 0)))
+1649220836836	Marionette	INFO	Listening on port 44123
+Read port: 44123
+1649220837036	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1649220851113	Marionette	INFO	Stopped listening on port 44123
+1649221687694	geckodriver	INFO	Listening on 127.0.0.1:50279
+1649221688702	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofileWcm7jF"
+*** You are running in headless mode.
+1649221692009	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileWcm7jF/search.json.mozlz4", (void 0)))
+1649221698779	Marionette	INFO	Listening on port 40969
+Read port: 40969
+1649221699161	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1649221699215	geckodriver	INFO	Listening on 127.0.0.1:55085
+1649221700232	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilerNdy5o"
+*** You are running in headless mode.
+1649221705467	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerNdy5o/search.json.mozlz4", (void 0)))
+1649221712685	Marionette	INFO	Listening on port 42675
+Read port: 42675
+1649221713137	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://uims.cuchd.in/uims/Scripts/jquery-2.0.3.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://uims.cuchd.in/uims/doodle/js/birthday.js, line 139: TypeError: canvas is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript warning: https://uims.cuchd.in/uims/Scripts/jquery-2.0.3.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://uims.cuchd.in/uims/doodle/js/birthday.js, line 139: TypeError: canvas is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://uims.cuchd.in/uims/Scripts/jquery-2.0.3.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://uims.cuchd.in/uims/ScriptResource.axd?d=mbGZm65DzNC0tMTq0ElbceDcvpdSedOOEcX9To-bGu7AAtw8JA5QtU_snOfhz9UaFfw3r3E95Ov4zNyDdyEx8GFGDCYHYXmHwKcBgmItX2-i21_bRshOSig8P_TMcVJcGGMrxLDCuAgS7CGnVONiiQ2&t=ffffffffdb8968b2, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1649221824139	Marionette	INFO	Stopped listening on port 40969
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1649222046175	geckodriver	INFO	Listening on 127.0.0.1:39661
+1649222047184	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofilebQafo4"
+*** You are running in headless mode.
+1649222050028	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebQafo4/search.json.mozlz4", (void 0)))
+1649222055959	Marionette	INFO	Listening on port 41227
+Read port: 41227
+1649222056523	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1649222056592	geckodriver	INFO	Listening on 127.0.0.1:35189
+1649222057606	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/tmp/rust_mozprofile12yrLZ"
+*** You are running in headless mode.
+1649222062219	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile12yrLZ/search.json.mozlz4", (void 0)))
+1649222069580	Marionette	INFO	Listening on port 44483
+Read port: 44483
+1649222069914	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://cuchd.blackboard.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1649222091719	Marionette	INFO	Stopped listening on port 41227
+JavaScript warning: https://uims.cuchd.in/uims/Scripts/jquery-2.0.3.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://uims.cuchd.in/uims/doodle/js/birthday.js, line 139: TypeError: canvas is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript warning: https://uims.cuchd.in/uims/Scripts/jquery-2.0.3.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://uims.cuchd.in/uims/doodle/js/birthday.js, line 139: TypeError: canvas is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://uims.cuchd.in/uims/Scripts/jquery-2.0.3.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://uims.cuchd.in/uims/ScriptResource.axd?d=mbGZm65DzNC0tMTq0ElbceDcvpdSedOOEcX9To-bGu7AAtw8JA5QtU_snOfhz9UaFfw3r3E95Ov4zNyDdyEx8GFGDCYHYXmHwKcBgmItX2-i21_bRshOSig8P_TMcVJcGGMrxLDCuAgS7CGnVONiiQ2&t=ffffffffdb8968b2, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://uims.cuchd.in/uims/Scripts/jquery-2.0.3.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://uims.cuchd.in/uims/frmStudentCourseWiseAttendanceSummary.aspx?type=etgkYfqBdH1fSfc255iYGw==, line 947: ReferenceError: BindEvents is not defined
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uims.cuchd.in"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null

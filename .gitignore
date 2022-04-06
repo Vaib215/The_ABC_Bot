@@ -1,0 +1,6 @@
+!runtime.txt
+!requirements.txt
+*.txt
+*.log
+__pycache__
+*.pyc

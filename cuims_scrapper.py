@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
-from PIL import Image
+import bb
 import os
 import time
 options = Options()
@@ -13,7 +13,7 @@ def login(uid,password):
     driver.find_element_by_id('btnNext').click()
     driver.find_element_by_xpath('//*[@id="txtLoginPassword"]').send_keys(password)
     driver.find_element_by_id('btnLogin').click()
-def utility(id,choice):
+def utility(uid,password,id,choice):
     if choice=="1":
         print("Finding Attendance")
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[1]/a').click()
@@ -43,4 +43,6 @@ def utility(id,choice):
         time.sleep(3)
         driver.find_element_by_id('ContentPlaceHolder1_gvMyTimeTable').screenshot("{}_timeTable.png".format(id))
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[1]/a').click()
-        return "{}_timeTable.png".format(id)            
+        return "{}_timeTable.png".format(id)
+    elif choice=="4":
+        return bb.calender(uid,password,id)
