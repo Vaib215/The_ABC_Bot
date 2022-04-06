@@ -1,10 +1,9 @@
 from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
 import bb
 import os
 import time
-options = Options()
-options.add_argument("--headless")
+options = webdriver.firefox.options.Options()
+options.headless = True
 driver = webdriver.Firefox(options=options)
 driver.implicitly_wait(10)
 def login(uid,password):

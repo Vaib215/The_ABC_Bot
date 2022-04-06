@@ -1,11 +1,10 @@
 from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
-options = Options()
-options.add_argument("--headless")
+options = webdriver.firefox.options.Options()
+options.headless = True
 driver = webdriver.Firefox(options=options)
 driver.implicitly_wait(10)
 def calender(uid,password,id):
