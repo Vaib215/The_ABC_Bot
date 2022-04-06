@@ -13,14 +13,14 @@ def login(uid,password):
     driver.find_element_by_xpath('//*[@id="txtLoginPassword"]').send_keys(password)
     driver.find_element_by_id('btnLogin').click()
 def utility(uid,password,id,choice):
-    if choice=="1":
+    if choice=="1" or choice=="attendance":
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[1]/a').click()
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/ul[1]/li[2]/a').click()
         time.sleep(3)
         driver.find_element_by_xpath('//*[@id="SortTable"]').screenshot("{}_attendance.png".format(id))
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[1]/a').click()
         return "{}_attendance.png".format(id)
-    elif choice =="2":
+    elif choice =="2" or choice=="marks":
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[11]/a').click()
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/ul[6]/li[4]/a').click()
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/ul[6]/ul[2]/li[2]/a').click()
@@ -35,23 +35,23 @@ def utility(uid,password,id,choice):
         marks.close()
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[11]/a').click()
         return "{}_marks.html".format(id)
-    elif choice=="3":
+    elif choice=="3" or choice=="timetable":
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[1]/a').click()
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/ul[1]/li[4]/a').click()
         time.sleep(3)
         driver.find_element_by_id('ContentPlaceHolder1_gvMyTimeTable').screenshot("{}_timeTable.png".format(id))
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[1]/a').click()
         return "{}_timeTable.png".format(id)
-    elif choice=="4":
+    elif choice=="4" or choice=="calender":
         return bb.calender(uid,password,id)
-    elif choice=="5":
+    elif choice=="5" or choice=="datesheet":
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[11]/a').click()
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/ul[6]/li[1]/a').click()
         time.sleep(3)
         driver.find_element_by_xpath('//*[@id="ContentPlaceHolder1_wucStudentDateSheet_gvStudentDateSheet"]').screenshot("{}_datesheet.png".format(id))
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[11]/a').click()
         return "{}_datesheet.png".format(id)
-    elif choice=="6":
+    elif choice=="6" or choice=="result":
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[11]/a').click()
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/ul[6]/li[2]/a').click()
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/ul[6]/ul[1]/li/a').click()
@@ -59,7 +59,7 @@ def utility(uid,password,id,choice):
         time.sleep(3)
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[11]/a').click()
         return "{}_result.png".format(id)
-    elif choice=="7":
+    elif choice=="7" or choice=="profile":
         driver.find_element_by_xpath('/html/body/form/div[4]/div[1]/div/div[1]/ul/li[13]/a').click()
         time.sleep(5)
         driver.find_element_by_xpath('//*[@id="ctl00_ContentPlaceHolder1_ReportViewer1_fixedTable"]').screenshot("{}_profile.png".format(id))

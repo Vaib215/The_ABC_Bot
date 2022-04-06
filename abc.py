@@ -35,7 +35,7 @@ def saveData(uid,password,id):
 def got_password(update: Update, context: CallbackContext):
      chat_id = update.message.chat_id
      password = update.message.text # now we got the password
-     uid = context.user_data["uid"] # we had the name , remember ?!
+     uid = context.user_data["uid"] # we had the uid , remember ?!
      context.user_data["password"] = password
      saveData(uid,password,chat_id)
      bot.send_message(chat_id , text = f"Done ! Your UID is {uid} and your password is {password}\nTo update the credentials in future, use /addCredentials .")
@@ -60,8 +60,7 @@ def main_handler(update, context:CallbackContext):
   uid,password = text.split()
   cred.close()
   try:
-    dispatcher.add_handler(MessageHandler(Filters.regex('attendance'), cuims_scrapper.utility(chat_id,"1"))
-    file=cuims_scrapper.utility(uid,password,chat_id,choice)
+    file = cuims_scrapper.utility(uid,password,chat_id,choice)
     bot.send_document(chat_id,open(file,'rb'))
     os.remove(file)
   except:
