@@ -60,8 +60,8 @@ def main_handler(update, context:CallbackContext):
   uid,password = text.split()
   cred.close()
   try:
-    file = cuims_scrapper.utility(uid,password,chat_id,choice)
-    bot.send_document(chat_id,open(file,'rb'))
+    target = cuims_scrapper.utility(uid,password,chat_id,choice)
+    bot.send_document(chat_id,open(target,'rb'))
     os.remove(file)
   except:
     bot.send_message(chat_id,"Please login first.")
