@@ -14,7 +14,7 @@ import pytz
 tz_IN = pytz.timezone('Asia/Kolkata')   
 curr_date = datetime.date.today(tz_IN)
 week = calendar.day_name[curr_date.weekday(tz_IN)]
-now=datetime.datetime.now(tz_IN))
+now=datetime.datetime.now(tz_IN)
 hr=now.hour
 mn=now.minute
 path=0
