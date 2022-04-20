@@ -10,14 +10,15 @@ import time
 import sys
 import datetime
 import calendar
-from dateutil.tz import gettz
-curr_date = datetime.date.today(tz=gettz('Asia/Kolkata'))
-week = calendar.day_name[curr_date.weekday(tz=gettz('Asia/Kolkata'))]
-now=datetime.datetime.now(tz=gettz('Asia/Kolkata'))
+import pytz
+tz_IN = pytz.timezone('Asia/Kolkata')   
+curr_date = datetime.date.today(tz_IN)
+week = calendar.day_name[curr_date.weekday(tz_IN)]
+now=datetime.datetime.now(tz_IN))
 hr=now.hour
 mn=now.minute
 path=0
-curtime= time.time(tz=gettz('Asia/Kolkata'))
+curtime= time.time(tz_IN)
 #Subjects
 digitalElec = 'https://cuchd.blackboard.com/ultra/courses/_65091_1/outline' #DE
 physics = 'https://cuchd.blackboard.com/ultra/courses/_62252_1/outline' #Physics
