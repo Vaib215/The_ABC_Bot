@@ -12,13 +12,13 @@ import datetime
 import calendar
 import pytz
 tz_IN = pytz.timezone('Asia/Kolkata')   
-curr_date = datetime.date.today(tz_IN)
-week = calendar.day_name[curr_date.weekday(tz_IN)]
+curr_date = datetime.date.today()
+week = calendar.day_name[curr_date.weekday()]
 now=datetime.datetime.now(tz_IN)
 hr=now.hour
 mn=now.minute
 path=0
-curtime= time.time(tz_IN)
+curtime= time.time()
 #Subjects
 digitalElec = 'https://cuchd.blackboard.com/ultra/courses/_65091_1/outline' #DE
 physics = 'https://cuchd.blackboard.com/ultra/courses/_62252_1/outline' #Physics
