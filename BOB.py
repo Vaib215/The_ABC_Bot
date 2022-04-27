@@ -89,7 +89,7 @@ if path:
     ## Variables
     URL = path
     UID = '21BCS10561'
-    PASSW = 'UIms@123'
+    PASSW = 'Cuims@123'
     ERR_STRINGS =["Loading failed. Exiting...","Joining Session Failed. Exiting...","Loading of Audio Test Page failed. Exiting...","Audio Test failed. Exiting...","Something went wrong while Cleaning Screen. Exiting...","Camera Test Failed. Exiting..."]
     T_UNTIL_LEAVE = 40
     T_UNTIL_LEAVE = 60*T_UNTIL_LEAVE
