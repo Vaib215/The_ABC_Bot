@@ -102,13 +102,13 @@ if path:
         p = webdriver.FirefoxProfile()
         p.set_preference("permissions.default.microphone", 1) #Allow mic access
         p.set_preference("permissions.default.camera", 1) # Allow cam access
-        p.set_preference("media.volume_scale", "100.0") #Muting the tab
+        p.set_preference("media.volume_scale", "0") #Muting the tab
         p.update_preferences()
         return p
     ## 2. Configure Headless Mode
     def new_foxfire_options():
         n = Options()
-        n.headless = False
+        n.headless = True
         return n
     ## 3. Safely Check if an element is visible
     def waitforexec(arg1, arg2, arg3=30,arg4=False):
